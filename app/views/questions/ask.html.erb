@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coaching</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Stupid Coaching</h1>
+    <p>Ask your coach anything</p>
+    <form action="/answer" class="form-inline">
+        <div class="input-group mb-3">
+        <input type="text" name="question" class="form-control">
+        <div class="input-group-append">
+            <input type="submit" value="Ask" class="form-control btn btn-primary">
+        </div>
+        </div>
+    </form>
+    </div>
+  </body>
+</html>    

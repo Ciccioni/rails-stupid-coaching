@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coaching</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Stupid Coaching</h1>
+    <blockquote class="question mb-3">
+        <p><%= @question %></p>
+        <p>— You</p>
+    </blockquote>
+    <blockquote class="answer mb-3">
+        <p><%= @answer %></p>
+        <p>— Your coach</p>
+    </blockquote>
+    <%= link_to "Ask a new question", ask_path %>
+    </div>
+  </body>
+</html>
